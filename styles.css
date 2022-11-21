@@ -1,7 +1,8 @@
 :root{
-    --main-blue: #45567d;
-    --main-white: #f0f0f0;
-    --main-gray: #303841;
+    --main-bg: #233B3B;
+    --main-navbar: #3F8A8A;
+    --main-text-color: #DAE8E8;
+    --main-anchor-background: black;
 }
 
 *{
@@ -11,7 +12,7 @@
 
 body{
     font-family: 'Helvetica', sans-serif;
-    background-color: darkslategray;
+    background-color: var(--main-bg);
 }
 
 #navbar{
@@ -24,7 +25,7 @@ body{
     overflow-x: hidden;
     border-right: solid;
     padding-left: 10px;
-    background-color: var(--main-blue);
+    background-color: var(--main-navbar);
 }
 
 #navbar > ul{
@@ -42,11 +43,11 @@ body{
 #navbar a{
     padding: 20x;
     text-decoration: none;
-    color: var(--main-white)
+    color: var(--main-text-color)
 }
 
 #navbar a:hover{
-    background-color: var(--main-gray);
+    background-color: var(--main-anchor-background);
     cursor: pointer;
     padding: 10px;
     font-size: 105%;
