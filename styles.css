@@ -2,7 +2,7 @@
     --main-bg: #233B3B;
     --main-navbar: #3F8A8A;
     --main-text-color: #DAE8E8;
-    --main-anchor-background: black;
+    --main-anchor-background: #48bd6f31;
 }
 
 *{
@@ -51,4 +51,29 @@ body{
     cursor: pointer;
     padding: 10px;
     font-size: 105%;
+    border-radius: 15%;
+}
+
+.members{
+    margin-top: 20px;
+    margin-left: 275px;
+    color: var(--main-text-color)
+}
+
+.members h1{
+    padding-bottom: 25px;
+}
+
+.members img{
+    width: 100px;
+}
+
+.about{
+    margin-top: 20px;
+    margin-left: 275px;
+    color: var(--main-text-color)
+}
+
+.about .section-title{
+    padding-bottom: 20px;
 }
