@@ -11,19 +11,16 @@
 }
 
 body{
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Muli', sans-serif;
     background-color: var(--main-bg);
 }
 
 #navbar{
-    height: 100%;
-    width: 235px;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
     overflow-x: hidden;
-    border-right: solid;
     padding-left: 10px;
     background-color: var(--main-navbar);
 }
@@ -37,11 +34,9 @@ body{
   font-size: 1.5rem;
   display: inline-block;
   padding-right: 20px;
-  padding-bottom: 20px;
 }
 
 #navbar a{
-    padding: 20x;
     text-decoration: none;
     color: var(--main-text-color)
 }
@@ -52,16 +47,18 @@ body{
     padding: 10px;
     font-size: 105%;
     border-radius: 15%;
+    border: 2px solid black;
 }
 
+.members .section-title{
+    font-family: "Space Mono", monospace;
+    padding-top: 90px;
+    padding-left: 10px;
+}
 .members{
-    margin-top: 20px;
-    margin-left: 275px;
+    padding-left: 10px;
+    margin-left: 20px;
     color: var(--main-text-color)
-}
-
-.members h1{
-    padding-bottom: 25px;
 }
 
 .members img{
@@ -69,6 +66,7 @@ body{
 }
 
 .about{
+    font-family: "Space Mono", monospace;
     margin-top: 20px;
     margin-left: 275px;
     color: var(--main-text-color)
