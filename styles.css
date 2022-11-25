@@ -2,7 +2,7 @@
     --main-bg: #233B3B;
     --main-navbar: #3F8A8A;
     --main-text-color: #DAE8E8;
-    --main-anchor-background: #48bd6fs5b;
+    --main-anchor-background: #48bd6f5b;
 }
 
 *{
@@ -17,7 +17,7 @@ body{
 
 #navbar{
     width: 100%;
-    height: 10%;
+    height: 75px;
     position: fixed;
     z-index: 1;
     top: 0;
