@@ -51,41 +51,30 @@ body{
     border-radius: 10%;
 }
 
-.members .section-title{
-    font-family: "Space Mono", monospace;
-    padding-top: 90px;
-    padding-left: 10px;
-}
-.members{
-    padding-left: 10px;
-    margin-left: 20px;
-    color: var(--main-text-color)
-}
-
-.members img{
+.content img{
     width: 100px;
 }
 
-.about{
+.content{
     font-family: "Muli";
-    margin-top: 85px;
+    margin-top: 88px;
     margin-left: 30px;
     color: var(--main-text-color)
 }
 
-.about a{
+.content a{
     font-family: "Muli";
     color: var(--main-text-color);
     text-decoration: none;
 }
 
-.about-content{
+.text{
     padding-bottom: 20px;
     margin-right: 30px;
     font-size: 105%;
 }
 
-.about .section-title{
+.content h1{
     padding-bottom: 5px;
     font-family: "Space Mono", "monospace";
 }
