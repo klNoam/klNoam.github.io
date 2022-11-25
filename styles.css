@@ -92,3 +92,11 @@ body{
 .value-description{
     font-size: 80%;
 }
+
+.email:hover{
+    text-decoration: underline;
+}
+
+.content ul{
+    margin-left: 20px;
+}
