@@ -38,6 +38,7 @@ body{
     font-size: 150%;
     position: relative;
     top: -13px;
+    left: 20px;
     font-family: "Space Mono", "monospace";;
 }
 
@@ -64,6 +65,28 @@ body{
     background-color: var(--main-anchor-background);
     cursor: pointer;
     border-radius: 10%;
+}
+
+@media(min-width: 842px){
+    #hamburger-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 842px){
+    #nav-link{
+        display: none;
+    }
+    #hamburger-menu{
+        position: absolute;
+        top: -17px;
+        right: -30px;
+    }
+    #logo-text{
+        position: absolute;
+        top: 20px;
+        left: 80px;
+    }
 }
 
 .content img{
