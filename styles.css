@@ -18,16 +18,20 @@ body{
 }
 
 .header img{
+    position: relative;
     height: 40px;
+    width: 40px;
     margin-left: 10px;
+    top: 10px;
 }
 
 .header a{
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .header ul{
     list-style: none;
+    margin-top: 5px;
 }
 
 .header{
@@ -40,9 +44,10 @@ body{
 .logo{
     display: inline-block;
     color: black;
-    font-size: 45px;
+    font-size: 30px;
     margin-left: 10px;
-    font-family: "Space Mono", "monospace";
+    margin-bottom: 10px;
+    font-family: "Space Mono", "monospace"
 }
 
 .nav{
@@ -55,12 +60,13 @@ body{
 }
 .menu a{
     display: block;
-    padding: 20px 15px;
+    padding: 12.5px 20px;
     color:white;
     font-size: 20px;
 }
 .menu a:hover{
     background-color: var(--main-anchor-background);
+    border-radius: 10%;
 }
 .nav{
     max-height: 0;
@@ -70,7 +76,7 @@ body{
 .hamb{
     cursor: pointer;
     float: right;
-    padding: 35px 20px;
+    padding: 25px 20px;
 }
 
 .hamb-line {
@@ -117,7 +123,7 @@ body{
     top:0;
 }
 
-@media (min-width: 895px) {
+@media (min-width: 840px) {
     .nav{
         max-height: none;
         top: 0;
