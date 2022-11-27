@@ -1,13 +1,15 @@
 :root{
     --main-bg: #233B3B;
-    --main-navbar: #3F8A8A;
+    --main-nav: #3F8A8A;
     --main-text-color: #DAE8E8;
     --main-anchor-background: #48bd6f5b;
+    --main-nav-shadow: #3877ff9f;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,77 +17,127 @@ body{
     background-color: var(--main-bg);
 }
 
-#navbar{
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    z-index: 1;
+.header img{
+    height: 40px;
+    margin-left: 10px;
+}
+
+.header a{
+    text-decoration: none; 
+}
+
+.header ul{
+    list-style: none;
+}
+
+.header{
+    background-color: var(--main-nav);
+    position: sticky;
     top: 0;
-    overflow-x: hidden;
-    padding-left: 10px;
-    background-color: var(--main-navbar);
-    white-space: nowrap;
+    width: 100%;
 }
 
-#navbar img{
-    margin-top: 10px;
-    height: 50px;
+.logo{
     display: inline-block;
+    color: black;
+    font-size: 45px;
+    margin-left: 10px;
+    font-family: "Space Mono", "monospace";
 }
 
-#logo-text{
-    display: inline-block;
-    font-size: 150%;
-    position: relative;
-    top: -13px;
-    left: 20px;
-    font-family: "Space Mono", "monospace";;
-}
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--main-nav);
+    overflow: hidden;
 
-#navbar > ul{
-    margin: 20px;
-    margin-right: 50px;
-    position: relative;
-    float: right;
 }
-
-#navbar > ul > li{
-  font-size: 1.5rem;
-  display: inline-block;
-  padding-right: 10px;
+.menu a{
+    display: block;
+    padding: 20px 15px;
+    color:white;
+    font-size: 20px;
 }
-
-#navbar a{
-    text-decoration: none;
-    color: var(--main-text-color);
-    padding: 5px;
-}
-
-#navbar a:hover{
+.menu a:hover{
     background-color: var(--main-anchor-background);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.hamb{
     cursor: pointer;
-    border-radius: 10%;
+    float: right;
+    padding: 35px 20px;
 }
 
-@media(min-width: 842px){
-    #hamburger-menu{
-        display: none;
-    }
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
 }
 
-@media (max-width: 842px){
-    #nav-link{
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} 
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media (min-width: 895px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: var(--main-anchor-background);
+
+    }
+
+    .hamb{
         display: none;
-    }
-    #hamburger-menu{
-        position: absolute;
-        top: -17px;
-        right: -30px;
-    }
-    #logo-text{
-        position: absolute;
-        top: 20px;
-        left: 80px;
     }
 }
 
