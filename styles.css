@@ -69,6 +69,7 @@ body{
     border-radius: 10%;
 }
 .nav{
+    margin-top: -2px;
     max-height: 0;
     transition: max-height .5s ease-out;
 }
@@ -82,7 +83,8 @@ body{
 .hamb-line {
     background: white;
     display: block;
-    height: 2px;
+    height: 3px;
+    margin-top: 3px;
     position: relative;
     width: 24px;
 }
@@ -98,10 +100,10 @@ body{
     width: 100%;
 }
 .hamb-line::before{
-    top: 5px;
+    top: 7px;
 }
 .hamb-line::after{
-    top: -5px;
+    top: -7px;
 }
 
 .side-menu {
