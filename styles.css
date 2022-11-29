@@ -151,8 +151,10 @@ body{
 
 #home-img{
     width: 100%;
+    max-width: 850px;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top:40px;
 }
 
 #welcoming-text{
