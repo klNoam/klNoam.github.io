@@ -245,3 +245,11 @@ body{
 .content ul{
     margin-left: 20px;
 }
+
+#resources-subheading{
+    margin-top: 30px;
+}
+
+.resources a:hover{
+    text-decoration: underline;
+}
